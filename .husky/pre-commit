@@ -1,0 +1,2 @@
+# Run staged file linters
+npm exec lint-staged
