@@ -1,4 +1,7 @@
 # Angular Docker CI/CD Demo
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/fe90b8b1-be1c-4017-8c99-d28858ab3ad8" alt="Git Hooks Workshop Demo" width="15%" style="max-width: 80px; height: auto;" />
+</p>
 
 This repository demonstrates a **complete workflow** for building, containerizing, and deploying an Angular application using Docker and GitHub Actions.
 
