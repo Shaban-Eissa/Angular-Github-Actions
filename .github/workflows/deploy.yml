@@ -50,7 +50,7 @@ jobs:
           IMAGE_TAG="${{ secrets.DOCKER_USERNAME }}/my-angular-app:latest"
 
           # Use sed to update the image tag in deployment.yml
-          sed -i "s|image: .*|image: ${IMAGE_TAG}|g" k8s/deployment.yml
+          sed -i "s|image: .*|image: ${IMAGE_TAG}|g" k8s/deployment.yaml
 
           # Add the modified file, commit, and push
           git add k8s/deployment.yml
