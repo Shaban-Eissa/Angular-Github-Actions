@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: my-angular-app
-        image: shaban20/my-angular-app:2e95f03e82bc683f0111dfa10c3f56364c59c7ca
+        image: shaban20/my-angular-app:5ecae804abb483657571ced42bbd4057c9730a98
         ports:
         - containerPort: 80
