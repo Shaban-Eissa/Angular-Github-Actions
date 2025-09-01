@@ -40,20 +40,15 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/my-angular-app:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/my-angular-app:${{ github.sha }}
 
-      - name: Commit manifest changes
+      - name: Update deployment manifest
         run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
-
-          # Get the full image name and tag from the build step's output
           IMAGE_TAG="${{ secrets.DOCKER_USERNAME }}/my-angular-app:${{ github.sha }}"
-
-          # Update the image tag in the deployment file
           sed -i "s|image: .*|image: ${IMAGE_TAG}|g" k8s/deployment.yaml
 
-          # Add the modified file, commit, and push
-          git add k8s/deployment.yaml
-          git commit -m "Update deployment image to ${IMAGE_TAG}"
-          git push
+      - name: Auto-commit manifest changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update deployment image to ${{ github.sha }}"
+          file_pattern: "k8s/deployment.yaml"
