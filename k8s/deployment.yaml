@@ -18,3 +18,5 @@ spec:
         image: shaban20/my-angular-app:2e95f03e82bc683f0111dfa10c3f56364c59c7ca
         ports:
         - containerPort: 80
+      imagePullSecrets:
+      - name: regcred
