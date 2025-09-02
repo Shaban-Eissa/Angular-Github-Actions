@@ -1,10 +1,11 @@
 # Angular GitOps Pipeline Demo
 
-<p align="left">
-  <img src="https://github.com/user-attachments/assets/fe90b8b1-be1c-4017-8c99-d28858ab3ad8"  width="15%" style="max-width: 80px; height: auto;" />
-</p>
-
-This repository demonstrates a **complete, automated GitOps workflow** for a containerized Angular application. It showcases the **"Git as the single source of truth"** principle, where every code change automatically updates the application's manifest file, which is then deployed by a Continuous Deployment tool.
+<img src="https://github.com/user-attachments/assets/fe90b8b1-be1c-4017-8c99-d28858ab3ad8"  width="15%" style="max-width: 80px; height: auto;" />
+<img src="https://github.com/user-attachments/assets/c6512b42-1827-4b93-b419-fc86a524fdb7"  width="25%" style="max-width: 80px; height: auto;"/>
+<img src="https://github.com/user-attachments/assets/f4279d32-88ef-4d17-be4f-608dc83219d2"  width="18%" style="max-width: 80px; height: auto;"/>
+<br/>
+<br/>
+This repository demonstrates a complete, automated GitOps workflow for a containerized Angular application. It showcases the "Git as the single source of truth" principle, where every code change automatically updates the application's manifest file, which is then deployed by a Continuous Deployment tool.
 
 ## The GitOps Workflow
 
